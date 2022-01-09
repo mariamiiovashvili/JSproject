@@ -1,0 +1,240 @@
+header {
+   
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightpink;
+    z-index: 100;
+    margin-bottom: 50px;
+}
+.header-div {
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    height: 133px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 5px;
+   
+    
+    
+  
+}
+.headerimg {
+    margin-top: auto;
+    max-width: 244px;
+    width: 100%;
+    transition: 2s linear;
+    transition-timing-function: ease-in-out;
+    
+
+}
+.headerimg:hover{
+    width: 400px;
+}
+.header-nav-ul {
+    max-width: 890px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    color: #42495B;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+   
+    
+   
+}
+.header-nav-ul li {
+    margin-right: 30px;
+    
+}
+.header-nav-ul li:hover {
+    color: palevioletred;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.registergif {
+    max-width: 120px;
+    width: 100%;
+   
+    
+    
+}
+.order-li {
+    display: none;
+}
+.registergif:hover {
+    max-width: 130px;
+    
+}
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 30px;
+    color: palevioletred;
+    cursor:pointer;
+    display: none;
+
+}
+.toggle-button:hover {
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: lightpink;
+}
+
+.footer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1720px;
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 20px;
+   
+}
+
+.footerimg {
+    max-width: 300px;
+    width: 100%;
+    
+}
+
+.footer-div-img{
+    max-width: 400px;
+    width: 100%;
+    cursor: pointer;
+    transition: 2s linear;
+    transition-timing-function: ease-in-out;
+    
+}
+.footer-div-img:hover {
+    width: 330px;
+}
+.footer-div h4 {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-nav{
+    max-width: 400px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    margin: auto 0;
+    line-height: 30px;
+    font-size: 20px;
+}
+.footer-logos {
+    max-width: 400px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        
+    -webkit-box-pack:space-evenly;
+    
+        -ms-flex-pack:space-evenly;
+    
+            justify-content:space-evenly;
+    
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.footer-logos i {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, -webkit-transform 2s;
+    -o-transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+.footer-logos i:hover {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+    color: purple;
+    
+    
+
+}
+.foth4 {
+   
+   font-size: 15px;
+   font-family: 'Poppins', sans-serif;
+} 
