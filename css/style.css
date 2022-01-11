@@ -1,4 +1,4 @@
-header {
+.headder-wraper{
    
     width: 100%;
     position: fixed;
@@ -8,7 +8,7 @@ header {
     z-index: 100;
     margin-bottom: 50px;
 }
-.header-div {
+.container {
     max-width: 1420px;
     width: 100%;
     margin: 0 auto;
@@ -25,10 +25,7 @@ header {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 5px;
-   
-    
-    
-  
+
 }
 .headerimg {
     margin-top: auto;
@@ -42,7 +39,7 @@ header {
 .headerimg:hover{
     width: 400px;
 }
-.header-nav-ul {
+.nav-list {
     max-width: 890px;
     width: 100%;
     display: -webkit-box;
@@ -57,11 +54,11 @@ header {
     
    
 }
-.header-nav-ul li {
+.nav-list li {
     margin-right: 30px;
     
 }
-.header-nav-ul li:hover {
+.nav-list li:hover {
     color: palevioletred;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
@@ -84,6 +81,9 @@ header {
     color: #e7eaf1;
     font-size: 25px;
 }
+.fa-map-marker-alt {
+    cursor: pointer;
+}
 
 .order-li {
     display: none;
@@ -92,7 +92,7 @@ header {
     max-width: 130px;
     
 }
-.toggle-button {
+/* .toggle-button {
     position: absolute;
     top: 20px;
     right: 50px;
@@ -104,7 +104,7 @@ header {
 }
 .toggle-button:hover {
     font-size: 40px;
-}
+} */
 .section1 {
     margin-top: 200px;
 }
@@ -216,7 +216,7 @@ header {
     max-width: 1720px;
     width: 100%;
     padding: 50px;
-    cursor: pointer;
+    
 }
 
 
@@ -231,12 +231,80 @@ header {
     
 .jw-image {
     border-radius: 250px;
+    max-width: 500px;
+    width: 100%;
+}
+.gift-img img{
+    
+    max-width: 1720px;
+    width: 100%;
+   
 }
 
 
 .card-div .jw-image {
     max-width: 500px;
+    width: 100%;
 }
+.card-container {
+    display: flex; 
+    justify-content: space-around;
+    max-width: 1900px;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    
+
+}
+.line img {
+    max-width: 380px;
+    width: 100%;
+    
+   
+}
+.line,
+.line img :hover {
+   
+    cursor: pointer;
+    max-width: 400px;
+    width: 100%;
+}
+.min-cont {
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    width: 100%;
+    border-radius: 50px;
+    border: 2px 2px black;
+    color: black;
+    background-color: rgb(224, 184, 97);
+    font-size: 17px;
+}
+.min-cont :hover {
+    color: blanchedalmond;
+    background-color: black;
+    max-width: 120px;
+    width: 100%;
+    border-radius: 50px;
+    border: 2px 2px black;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+
+}
+
+
+
+
+
+
+
 
 /* 
 .jw-image {
