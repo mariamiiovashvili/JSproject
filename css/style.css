@@ -144,7 +144,7 @@
     padding-left: 100px;
 }
 .coffee-section {
-    background-color: wheat;
+    background-color: rgb(250, 249, 246);
     margin-top: 133px;
 }
 
@@ -173,6 +173,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 150px;
+    margin-bottom: 100px;
 }
 .tea-section 
 
@@ -306,61 +307,6 @@
 
 
 
-/* 
-.jw-image {
-    margin-bottom: 10px !important;
-  }
-  .jw-image:before,
-  .jw-image:after {
-    content: " ";
-    display: table;
-  }
-  .jw-image:after {
-    clear: both;
-  }
-  .jw-element-image {
-    position: relative;
-    max-width: 100%;
-    line-height: 0;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-  .jw-element-image__image-wrapper {
-    width: 100%;
-  }
-  .jw-element-image__image {
-    width: 100%;
-  }
-  .jw-element-image-is-right {
-    float: right;
-  }
-  .jw-element-image-is-left {
-    float: left;
-  }
-  .jw-element-image-is-center {
-    margin: 0 auto;
-  }
-  @media (max-width: 640px) {
-    .jw-element-image,
-    .jw-image-text .jw-element-image {
-      float: none;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  @media (max-width: 640px) {
-    .jw-element-image--full-width-to-640 {
-      width: 100% !important;
-    }
-  }
-  @media (max-width: 420px) {
-    .jw-element-image--full-width-to-420 {
-      width: 100% !important;
-    }
-  } 
- */
 
 /* contact */
 
@@ -723,3 +669,71 @@ footer {
    color: #e7eaf1;
    font-family: 'Poppins', sans-serif;
 } 
+
+/* imput */
+
+.input-wrp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1860px;
+    width: 100%;
+    padding: 200px;
+  }
+  .input-wrp h1{
+    font-size: 25px;
+    color: rgb(194, 116, 106);
+    padding-bottom: 30px;
+  }
+  
+  .button {
+    border: none;
+    background-color: rgb(221, 188, 160);
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+   
+    
+  }
+  .clear-list{
+    margin-top: 30px;
+    border: none;
+    background-color: rgb(221, 188, 160);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+   
+  }
+  .clear-list:hover{
+    cursor: pointer;
+    background-color: rgb(185, 131, 110);
+    font-size: 25px;
+  }
+  .button:hover{
+    cursor: pointer;
+    background-color:rgb(185, 131, 110);
+    font-size: 25px;
+  
+  }
+  .input{
+    border: none;
+    background-color: rgb(253, 186, 169);
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(44, 42, 42);
+  
+  }
+  .ul-list li{
+    margin-left: 85px;
+    margin-top: 10px;
+    font-size: 22px;
+    color: rgb(214, 109, 77);
+  }
+  .btn-delete{
+    border: none;
+    background-color: transparent;
+    font-size:30px;
+    color: rgb(139, 107, 81);
+    cursor: pointer;
+  }

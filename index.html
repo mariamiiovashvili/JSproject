@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/sign.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -46,11 +47,20 @@
                     </ul>
                    
                 </nav>
-                <div class="icons">
-                <i class="fas fa-user-plus"></i>
-                <i class="fas fa-sign-in-alt"></i>
-                <a href="contact.html"><i class="fas fa-map-marker-alt"></i></a>
-                <i class="fas fa-search"></i>
+                <div id="header-right-block">
+                    <div class="header-sign navBarActive" id="sign-up">
+                         <a href="#">
+                            <i class="fas fa-user-plus"></i>
+                         </a>    
+                    </div>
+                    <div class="header-sign navBarActive" id="sign-in">
+                         <a href="#">
+                            <i class="fas fa-sign-in-alt"></i>
+                         </a>    
+                    </div>
+                </div>
+                    <a href="contact.html"><i class="fas fa-map-marker-alt"></i></a>
+                     <i class="fas fa-search"></i>
                 </div>
 
                 <div class="toggle-menu" id="toggleButton">
@@ -162,6 +172,10 @@
         </footer>
 
 
+    <script src="sign.js"></script>
+    <script src="viewall.js"></script>
     <script src="script.js"></script>
+   
+    
 </body>
 </html>
