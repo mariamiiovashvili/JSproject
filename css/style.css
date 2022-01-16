@@ -117,7 +117,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 200px;
+    
 }
+
 .section1-div {
     max-width: 1550px;
     width: 100%;
@@ -128,8 +130,9 @@ body {
 
     /* text-align: center; */
     align-items: center;
-    
+   
 }
+
 .section1h2 {
     font-size: 40px;
     margin-bottom: 40px;
@@ -147,6 +150,11 @@ body {
     width: 100%;
     margin-top: 80px;
     padding-left: 100px;
+   
+}
+.section1-div2 img{
+    max-width: 700px;
+    width: 100%;
 }
 .coffee-section {
     /* background-color: rgb(250, 249, 246); */
@@ -176,11 +184,21 @@ body {
 }
 .coffee-img {
     display: flex;
-    align-items: center;
+    /* max-width: 8000px; */
+    width: 100%;
+    /* align-items: center; */
     justify-content: center;
     margin-top: 150px;
     margin-bottom: 100px;
+       
+   
 }
+.coffee-img img {
+    max-width: 1500px;
+    width: 100%;
+    box-shadow: 0 0 20px rgb(102, 98, 98);
+}
+
 .tea-section 
 
 {
@@ -219,7 +237,13 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 150px;
+    
 
+}
+.tea-img img {
+    box-shadow: 0 0 20px rgb(102, 98, 98);
+    max-width: 1500px;
+    width: 100%;
 }
 .gift-section {
     /* background-color: rgb(187, 145, 82); */
