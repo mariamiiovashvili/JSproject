@@ -45,7 +45,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    
     color: #e7eaf1;
     font-size: 20px;
     font-weight: 600;
@@ -60,7 +59,7 @@
 }
 .nav-list li:hover {
     color: palevioletred;
-    font-size: 25px;
+    font-size: 32px;
     font-family: 'Poppins', sans-serif;
 
 
@@ -255,7 +254,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 }
-.line {
+.cardline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,14 +262,14 @@
     
 
 }
-.line img {
+.cardline img {
     max-width: 380px;
     width: 100%;
     
    
 }
-.line,
-.line img :hover {
+.cardline,
+.cardline img :hover {
    
     cursor: pointer;
     max-width: 400px;
@@ -447,33 +446,21 @@
     
 }
 @-webkit-keyframes submit {
-    0% {background-color: pink;color: powderblue;}
-    10% {background-color: palevioletred;color: lightseagreen;}
-    20% {background-color: lightseagreen;color: magenta;}
-    30% {background-color: lightskyblue;color: pink;}
-    40% {background-color: limegreen;color: plum;}
-    50% {background-color: lightcoral;color: yellowgreen;}
-    60% {background-color: lightblue;color: violet;}
-    70% {background-color: yellowgreen;color: lightskyblue;}
-    80% {background-color: plum;color: limegreen;}
-    90% {background-color: peachpuff;color: mediumblue;}
-    100% {background-color: powderblue;color: mediumpurple;}
+    0% {background-color: rgb(75, 62, 64);color: rgb(216, 241, 245);}
+    25% {background-color: rgb(85, 30, 49);color: rgb(206, 233, 231);}
+    50% {background-color: rgb(83, 55, 52);color: rgb(241, 228, 241);}
+    75% {background-color: rgb(90, 49, 49);color: rgb(250, 237, 239);}
+    100% {background-color: rgb(104, 66, 44);color: rgb(248, 238, 248);}
+    
     
    
 }
 @keyframes submit {
-    0% {background-color: pink;color: powderblue;}
-    10% {background-color: palevioletred;color: lightseagreen;}
-    20% {background-color: lightseagreen;color: magenta;}
-    30% {background-color: lightskyblue;color: pink;}
-    40% {background-color: limegreen;color: plum;}
-    50% {background-color: lightcoral;color: yellowgreen;}
-    60% {background-color: lightblue;color: violet;}
-    70% {background-color: yellowgreen;color: lightskyblue;}
-    80% {background-color: plum;color: limegreen;}
-    90% {background-color: peachpuff;color: mediumblue;}
-    100% {background-color: powderblue;color: mediumpurple;}
-    
+    0% {background-color: rgb(75, 62, 64);color: rgb(216, 241, 245);}
+    25% {background-color: rgb(85, 30, 49);color: rgb(206, 233, 231);}
+    50% {background-color: rgb(83, 55, 52);color: rgb(241, 228, 241);}
+    75% {background-color: rgb(90, 49, 49);color: rgb(250, 237, 239);}
+    100% {background-color: rgb(104, 66, 44);color: rgb(248, 238, 248);}
    
 }
 
@@ -736,4 +723,25 @@ footer {
     font-size:30px;
     color: rgb(139, 107, 81);
     cursor: pointer;
+  }
+  .privacy {
+      max-width: 1800px;
+      width: 100%;
+      margin-top: 150px;
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+
+  .privacy h2 {
+      font-size: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 15px;
+  }
+  .privacy p {
+      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 10px;
   }

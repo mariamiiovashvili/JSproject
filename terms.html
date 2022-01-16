@@ -17,7 +17,7 @@
     <title>Coffee shop</title>
     
     <script src="https://kit.fontawesome.com/225e84c276.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="https://www.freepik.com/premium-vector/coffee-vector_1894830.htm" type="image/gif" sizes="16x16">
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/sign.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -46,12 +47,19 @@
                     </ul>
                    
                 </nav>
-                <div class="icons">
-                <i class="fas fa-user-plus"></i>
-                <i class="fas fa-sign-in-alt"></i>
-                <a href="contact.html"><i class="fas fa-map-marker-alt"></i></a>
-                <i class="fas fa-search"></i>
+                <div id="header-right-block">
+                    <div class="header-sign navBarActive" id="sign-up">
+                         <a href="#">
+                            <i class="fas fa-user-plus"></i>
+                         </a>    
+                    </div>
+                    <div class="header-sign navBarActive" id="sign-in">
+                         <a href="#">
+                            <i class="fas fa-sign-in-alt"></i>
+                         </a>    
+                    </div>
                 </div>
+                   
 
                 <div class="toggle-menu" id="toggleButton">
                     <div class="line line1"></div>
@@ -63,6 +71,14 @@
 
 
 
+                                        <div class="signin-overlay" id="signin-overlay">
+                                            <div class="signin-content" id="signin-content"></div>
+                                            <div class="signin-close" id="signin-close">X</div>
+                                        </div>
+                                        <div class="signup-overlay" id="signup-overlay">
+                                            <div class="signup-content" id="signup-content"></div>
+                                            <div class="signup-close" id="signup-close">X</div>
+                                        </div>
 
 
 
@@ -72,7 +88,11 @@
 
 
 
-<div>
+
+
+
+
+<div class="privacy">
     <h2>COFFEE & TEA TERMS AND CONDITIONS OF USE</h2>
     <p>Effective Date: Feb. 14, 2017
         Coffee SHOP Inc. offers this website to allow you to shop for coffee, tea and other products online, to locate Peet’s products and retail locations, licensed locations, and grocery stores, and to help you learn more about Peet’s and how our coffees and teas are grown, purchased, roasted, and blended. By using this website, you agree to these terms and conditions. This website is intended only for the use of persons age eighteen (18) or older. We reserve the right to modify or update these terms and conditions at any time. Please be sure you have read and agree to our current terms and conditions.
@@ -135,3 +155,58 @@
         
         COPYRIGHT CLAIM POLICY: We do not permit anyone to post materials on our website that infringe the copyrights of others. If you believe any content on our website infringes your rights or if you are acting with consent on behalf of someone who does, please send us notice through our COPYRIGHT INFRINGEMENT CLAIMS PROCEDURE</p>
 </div>
+
+
+
+<footer class="footer">
+    <div class="footer-div">
+           <div class="footer-nav">
+               <h2> HELP CENTER </h2>
+               <a href="contact.html"> <h3>Contact Us</h3></a>
+               <h3>SHIPPING & RETURNS</h3>
+           </div>
+           <div class="footer-nav">
+               <h2>COMPANY</h2>
+               <h3>CAREERS</h3>
+               <h4>CODE OF ETHICS</h4>
+               <a href="privacy.html"><h3> Privacy Policy</h3> </a>
+               <a href="terms.html"><h3> Terms of Service</h3> </a>
+           </div>
+           <div class="footer-nav">
+               <h2>GIFT CARDS</h2>
+               <a href="giftcard.html"><h3> SHOP GIFT CARDS</h3></a>
+           </div>
+           <div class="footer-nav">
+               <h2>OFFERS</h2>
+               <h3>CURRENT OFFERS</h3>
+               <h3>GET FREE COFFEE</h3>
+           </div>
+
+           <div class="footer-nav">
+               <h2>PARTNER</h2>
+               <h3>CORPORATE GIFTS</h3>
+               <h3>WHOLESALE PROGRAM</h3>
+           </div>
+           <div class="footer-logos" >
+              <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+              <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="tiktok.com"><i class="fab fa-tiktok"></i></a>
+              <a href="linkedin.com"><i class="fab fa-linkedin"></i></a>
+              <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+
+           </div>
+           
+           
+          
+       </div>
+       <h4 class="foth4"> © 2022. COFFEE SHOP| Privacy Policy | California Privacy Rights | Terms of Service</h4>
+   </footer>
+
+
+<script src="sign.js"></script>
+<script src="viewall.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

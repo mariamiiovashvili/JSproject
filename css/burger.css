@@ -1,5 +1,5 @@
 #header-right-block{
-	max-width: 240px;
+	max-width: 190px;
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -59,8 +59,8 @@
 	width: 100%;
 	height: 40px;
 	border-radius: 25px;
-	border: 2px solid #E76F51;
-	background-color: #E76F51;
+	border: 2px solid palevioletred;
+	background-color: palevioletred;
 }
 
 
@@ -72,20 +72,7 @@
 
 
 
-.header-navigation {
-    display: flex;
-    justify-content: flex-end;
-}
-.nav-list {
-    display: flex;
-}
-.nav-list li a {
-    color: #fff;
-    font-size: 24px;
-}
-.nav-list li {
-    margin: 10px;
-}
+
 
 /* burger code */
 .toggle-menu {

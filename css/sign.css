@@ -1,4 +1,4 @@
-.header-sign {
+/* .header-sign {
 	max-width: 105px;
 	color: black;
 	background-color: rgb(218, 152, 98);
@@ -6,12 +6,6 @@
 	margin: 0 auto;
 	cursor: pointer;
 }
-
-
-
-
-
-
 .overlay{
 	position: fixed;
 	top: 0;
@@ -87,4 +81,139 @@
 	font-size: 30px;
 	letter-spacing: 5px;
 	margin-top: 30px;
+} */
+
+
+
+/* MTG  რეგისტრაციის ფორმის სტილები */
+
+.signin-overlay,
+.signup-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #da8686;
+	opacity: 99%;
+	z-index: 101;
+	display: none;
+}
+.signin-overlay.signin-show,
+.signup-overlay.signup-show{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+
+.signup-content,
+.signin-content{
+	margin: 0 auto;
+	padding-top: 100px;
+	max-width: 400px;
+	width: 90%;	
+}
+
+.form-container,
+.form-container-signin,
+.divEmailSignIN-container,
+.divPswrdSignIn-container,
+.divChekBoxSignIn-container,
+.divEmailSignUp-container,
+.divPswrdSignUP-container,
+.divRepeatPswrdSignUP-container,
+.divChekBoxSignUP-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	position: relative;
+}
+#signin-form,
+#signup_form{
+	color: #4e2217;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding:30px;
+	-webkit-box-shadow: 0 0 20px white;
+	        box-shadow: 0 0 20px white;
+	border-radius: 10px;
+	background-color: white;
+}
+#signin-form label,
+#signup_form label,
+#signin-button,
+#signup-button{
+	margin: 20px 0 10px;
+}
+#signin-button,
+#signup-button{
+	position: absolute;
+	bottom: -40%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	background: white;
+	width: 100px;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 10px #fff;
+	        box-shadow: 0 0 10px #fff;
+	color: #614943;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#signin-button{
+	bottom: -120px;
+}
+#password-signin,
+#useremail-signin,
+#useremail,
+#password,
+#repeat_password{
+	outline: none;
+	border: none;
+	border-bottom: 2px solid white;
+	height: 30px;
+	color: gray;
+}
+#password-signin:focus,
+#useremail-signin:focus,
+#useremail:focus,
+#password:focus,
+#repeat_password:focus{
+	border-bottom: 2px solid #E76F51;
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+.errDiv,
+.errorSignUpDiv{
+	font-size: 14px;
+	color: rgb(213, 236, 0);
+}
+.fa-eye,
+.fa-eye-slash{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.fa-eye:hover,
+.fa-eye-slash:hover{
+    opacity: 1;
+}
+.fa-eye:active,
+.fa-eye-slash:active{
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
 }
