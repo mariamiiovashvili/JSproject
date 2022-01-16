@@ -1,10 +1,15 @@
+body {
+    background-color: whitesmoke;
+    background-image: url(https://images3.alphacoders.com/876/876952.jpg);
+}
+
 .headder-wraper{
    
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(97, 74, 74);
+    background-color: rgb(0, 0, 0);
     z-index: 100;
     margin-bottom: 50px;
 }
@@ -58,7 +63,7 @@
     
 }
 .nav-list li:hover {
-    color: palevioletred;
+    color: purple;
     font-size: 32px;
     font-family: 'Poppins', sans-serif;
 
@@ -119,6 +124,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 50px;
+    color: white;
 
     /* text-align: center; */
     align-items: center;
@@ -143,7 +149,7 @@
     padding-left: 100px;
 }
 .coffee-section {
-    background-color: rgb(250, 249, 246);
+    /* background-color: rgb(250, 249, 246); */
     margin-top: 133px;
 }
 
@@ -153,6 +159,7 @@
     max-width: 1750px;
     width: 100%;
     padding-top: 100px;
+    color: white;
    
 
 
@@ -177,8 +184,16 @@
 .tea-section 
 
 {
-    background-color: peachpuff;
+    /* background-color: peachpuff; */
     margin-top: 133px;
+}
+.ourtea {
+    max-width: 150px;
+    display: flex;
+    margin: 0 auto;
+    font-size: 40px ;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+
 }
 .tea-div, .gift-div {
     display: flex;
@@ -186,6 +201,7 @@
     max-width: 1750px;
     width: 100%;
     padding-top: 100px;
+    color: white;
 }
 
 .tea-div h2, .gift-div h2{
@@ -206,9 +222,10 @@
 
 }
 .gift-section {
-    background-color: rgb(187, 145, 82);
+    /* background-color: rgb(187, 145, 82); */
     margin-top: 133px;
 }
+
 .card-main-div {
     display: flex;
     flex-direction: column;
@@ -216,6 +233,7 @@
     max-width: 1720px;
     width: 100%;
     padding: 50px;
+    
     
 }
 
@@ -227,6 +245,7 @@
     max-width: 1720px;
     width: 100%;
     padding: 50px;
+   
 }
     
 .jw-image {
@@ -253,12 +272,14 @@
     width: 100%;
     margin-top: 200px;
     margin-bottom: 200px;
+    color: rgb(204, 174, 2);
 }
 .cardline {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 20px;
+    
     
 
 }
@@ -282,13 +303,13 @@
     width: 100%;
     border-radius: 50px;
     border: 2px 2px black;
-    color: black;
-    background-color: rgb(224, 184, 97);
+    color: rgb(187, 159, 3);
+    /* background-color: rgb(224, 184, 97); */
     font-size: 17px;
 }
 .min-cont :hover {
     color: blanchedalmond;
-    background-color: black;
+    /* background-color: black; */
     max-width: 120px;
     width: 100%;
     border-radius: 50px;
@@ -332,12 +353,12 @@
     
 }
 .contact-div h2 {
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
     font-size: 65px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 .contact-div h3 {
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
     font-size: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     margin-top: 50px;
@@ -347,7 +368,7 @@
 .contact-div p {
     font-size: 21px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    color: grey;
+    color: rgb(255, 255, 255);
     margin-bottom: 10px;
 }
 
@@ -382,7 +403,7 @@
 .contact-form h3 {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 .contact {
@@ -395,28 +416,28 @@
     border-color: inherit;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
 }
 ::-webkit-input-placeholder {
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     opacity: 0.4;
 }
 ::-moz-placeholder {
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     opacity: 0.4;
 }
 :-ms-input-placeholder {
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     opacity: 0.4;
 }
 ::-ms-input-placeholder {
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     opacity: 0.4;
@@ -428,11 +449,11 @@
     opacity: 0.4;
 }
 .submit {
-    color: purple;
+    /* color: purple; */
     font-size: 25px;
     font-family: 'Emilys Candy', cursive;
     border-radius: 20px 20px 20px 20px;
-    border-color: purple;
+    border-color: rgb(0, 0, 0);
     background-color: white;
     max-width: 150px;
     width: 100%;
@@ -492,7 +513,7 @@
     font-family: 'Poppins', sans-serif;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: rgb(97, 74, 74);
+    color: rgb(255, 255, 255);
     
 }
 .address {
@@ -553,7 +574,7 @@
 
 footer {
     width: 100%;
-    background-color: rgb(97, 74, 74);
+    background-color: rgb(0, 0, 0);
 }
 
 .footer-div {
@@ -574,18 +595,7 @@ footer {
 }
 
 
-/* 
-.footer-div-img{
-    max-width: 400px;
-    width: 100%;
-    cursor: pointer;
-    transition: 2s linear;
-    transition-timing-function: ease-in-out;
-    
-} */
-/* .footer-div-img:hover {
-    width: 330px;
-} */
+
 .footer-div h4 {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
@@ -607,6 +617,9 @@ footer {
     margin: auto 0;
     line-height: 30px;
     font-size: 20px;
+}
+.footer-nav :hover {
+    color: purple;
 }
 .footer-nav h2 {
     font-size: 20px;
@@ -645,7 +658,7 @@ footer {
     -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
             transform: rotate(360deg);
-    /* color: purple; */
+    color: purple;
     
     
 
