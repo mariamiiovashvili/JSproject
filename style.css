@@ -1,3 +1,4 @@
+
 header {
    
     width: 100%;
@@ -34,8 +35,12 @@ header {
     margin-top: auto;
     max-width: 244px;
     width: 100%;
+    -webkit-transition: 2s linear;
+    -o-transition: 2s linear;
     transition: 2s linear;
-    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+         -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
     
 
 }
@@ -168,8 +173,12 @@ footer {
     max-width: 400px;
     width: 100%;
     cursor: pointer;
+    -webkit-transition: 2s linear;
+    -o-transition: 2s linear;
     transition: 2s linear;
-    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+         -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
     
 }
 .footer-div-img:hover {

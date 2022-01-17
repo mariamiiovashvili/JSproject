@@ -1,12 +1,5 @@
 
 
-
-
-
-//  - signUp/signIn  & ვალიდაცია
-
-
-
 let signupoverlay = document.getElementById('signup-overlay');
 let signupcontent = document.getElementById('signup-content');
 let signupclose = document.getElementById('signup-close');
@@ -23,6 +16,16 @@ signUp.addEventListener('click', () => {
 		form.setAttribute('action', '#');
 		form.setAttribute('method', 'POST');
 		form.setAttribute('id', 'signup_form');
+
+	let UsernameLabel = document.createElement('label');
+		UsernameLabel.setAttribute('for', 'username');
+		UsernameLabel.textContent = "Username";
+	
+	let UsernameInput = document.createElement('input');
+	    UsernameInput.setAttribute('type', 'text');
+	    UsernameInput.setAttribute('name', 'Username');
+	    UsernameInput.setAttribute('id', 'Username');
+	    UsernameInput.setAttribute('placeholder', 'Enter Username');
 		
 	let emailLabel = document.createElement('label');
 		emailLabel.setAttribute('for', 'useremail');
@@ -82,6 +85,13 @@ signUp.addEventListener('click', () => {
 		signupbutton.setAttribute('id', 'signup-button');
 		signupbutton.textContent = "Sign Up";
 
+		let divUserSignUp = document.createElement('div');
+		divUserSignUp.classList.add('divUserSignUp-container');
+		
+			let errorUserDiv = document.createElement('div');
+			    errorUserDiv.classList.add('errorSignUpDiv');
+			    errorUserDiv.setAttribute('id', 'err_signUpn_username');
+
 		let divEmailSignUp = document.createElement('div');
 		divEmailSignUp.classList.add('divEmailSignUp-container');
 		
@@ -110,6 +120,11 @@ signUp.addEventListener('click', () => {
 				errorCheckDiv.classList.add('errorSignUpDiv');
 				errorCheckDiv.setAttribute('id', 'err_signUpn_checkbox');
 
+
+		divUserSignUp.appendChild(UsernameLabel);
+		divUserSignUp.appendChild(UsernameInput);		
+        divUserSignUp.appendChild(errorUserDiv);
+		divFormContainer.appendChild(divUserSignUp);
 		divEmailSignUp.appendChild(emailLabel);
 		divEmailSignUp.appendChild(emailInput);
 		divEmailSignUp.appendChild(errorEmailDiv);
@@ -166,6 +181,12 @@ signUp.addEventListener('click', () => {
 		signUp_item.preventDefault();
 		let error_signUp = {};
 		let form_signUp = signUp_item.target;
+
+		let Username = form_signUp.querySelector('#username').value;
+			
+			if(Username == ''){
+				error_signUp.username = 'Please Enter Your Username!';
+			}
 
 		let useremail = form_signUp.querySelector('#useremail').value;
 			if(!useremail.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
@@ -231,6 +252,19 @@ signIn.addEventListener('click', () => {
 	let divFormContainerSignIn = document.createElement('div');
 		divFormContainerSignIn.classList.add('form-container-signin');
 
+	
+	let usernameLableSignIn = document.createElement('label');
+	    usernameLableSignIn.setAttribute('for', 'username-signin');
+	    usernameLableSignIn.textContent = "Username";
+	    usernameLableSignIn.classList.add('username-lbl-signIn');
+	
+	let usernameInputSignIn = document.createElement('input');
+	    usernameInputSignIn.setAttribute('type', 'text');
+	    usernameInputSignIn.setAttribute('name', 'username-signin');
+	    usernameInputSignIn.setAttribute('id', 'username-signin');
+	    usernameInputSignIn.setAttribute('placeholder', 'Enter Username'); 
+		
+
 	let emailLableSignIn = document.createElement('label');
 		emailLableSignIn.setAttribute('for', 'useremail-signin');
 		emailLableSignIn.textContent = "Email";
@@ -280,6 +314,13 @@ signIn.addEventListener('click', () => {
 		signinbutton.setAttribute('id', 'signin-button');
 		signinbutton.textContent = "Sign In";	
 
+		let divusernameSignIn = document.createElement('div');
+		    divusernameSignIn.classList.add('divUsernameSignIN-container');
+
+			let errUsernameDiv = document.createElement('div');
+			    errUsernameDiv.classList.add('errDiv');
+			    errUsernameDiv.setAttribute('id', 'err_signIn_email');
+
 		let divEmailSignIn = document.createElement('div');
 			divEmailSignIn.classList.add('divEmailSignIN-container');
 
@@ -297,6 +338,10 @@ signIn.addEventListener('click', () => {
 		let divChekBoxSignIn = document.createElement('div');
 			divChekBoxSignIn.classList.add('divChekBoxSignIn-container');
 
+	divusernameSignIn.appendChild(usernameLableSignIn);
+	divusernameSignIn.appendChild(usernameInputSignIn);
+	divusernameSignIn.appendChild(errUsernameDiv);
+	divFormContainerSignIn.appendChild(divusernameSignIn);
 	divEmailSignIn.appendChild(emailLableSignIn);
 	divEmailSignIn.appendChild(emailInputSignIn);
 	divEmailSignIn.appendChild(errEmailDiv);
@@ -341,6 +386,13 @@ signIn.addEventListener('click', () => {
 		let error_signInValidation = {};
 		let form_SignIn = signIn_item.target;
 
+		let Username = form_SignIn.querySelector('#username-signin').value;
+			
+			if(Username == ''){
+				error_signInValidation.username = 'Please Enter Your Username!';
+			}
+
+
 		let email = form_SignIn.querySelector('#useremail-signin').value;
 		 	if(!email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
 				error_signInValidation.email = 'Invalid Email Adress!';
@@ -374,19 +426,27 @@ signIn.addEventListener('click', () => {
 		let signIn_user_checkBox = document.getElementById('checkbox');
 
 		if(signIn_user_checkBox.checked){
+			let save_name = document.getElementById('username-signin').value;
 			let save_user = document.getElementById('useremail-signin').value;
 			let save_pswrd = document.getElementById('password-signin').value;
+			Cookies.set('user_nm', save_name);
+			Cookies.set('user_nm', save_name, {expires: 0.1});
 			Cookies.set('user_bank', save_user);
 			Cookies.set('user_bank', save_user, {expires: 0.1});
 			Cookies.set('user_pswrd', save_pswrd);
 			Cookies.set('user_pswrd', save_pswrd, {expires: 0.1});
 		}else{
+			Cookies.remove('user_nm');
 			Cookies.remove('user_bank');
 			Cookies.remove('user_pswrd');
 		}
 
+		    let savedname = Cookies.get('user_nm');
 			let savedUser = Cookies.get('user_bank');
 			let savedPswrd = Cookies.get('user_pswrd');
+			if(savedname){
+				document.getElementById('username-signin').value = savedname;
+			}
 			if(savedUser){
 				document.getElementById('useremail-signin').value = savedUser;
 			}

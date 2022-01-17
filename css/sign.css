@@ -1,5 +1,5 @@
 
-/* რეგისტრაციის ფორმის სტილები */
+
 
 .signin-overlay,
 .signup-overlay{
@@ -21,19 +21,26 @@
 }
 
 
-.signup-content,
+.signup-content{
+	margin: 0 auto;
+	padding-top: 100px;
+	max-width: 500px;
+	width: 100%;	
+}
 .signin-content{
 	margin: 0 auto;
 	padding-top: 100px;
-	max-width: 400px;
-	width: 90%;	
+	max-width: 300px;
+	width: 100%;	
 }
 
 .form-container,
 .form-container-signin,
+.divusernameSignIN-container,
 .divEmailSignIN-container,
 .divPswrdSignIn-container,
 .divChekBoxSignIn-container,
+.divUserSignUp-container,
 .divEmailSignUp-container,
 .divPswrdSignUP-container,
 .divRepeatPswrdSignUP-container,
@@ -49,7 +56,7 @@
 }
 #signin-form,
 #signup_form{
-	color: #4e2217;
+	color: #070707;
 	font-size: 20px;
 	letter-spacing: 1px;
 	padding:30px;
@@ -87,8 +94,10 @@
 #signin-button{
 	bottom: -120px;
 }
+#username-signin,
 #password-signin,
 #useremail-signin,
+#Username,
 #useremail,
 #password,
 #repeat_password{
@@ -96,14 +105,16 @@
 	border: none;
 	border-bottom: 2px solid white;
 	height: 30px;
-	color: gray;
+	color: rgb(7, 7, 7);
 }
+#username-signin:focus,
 #password-signin:focus,
 #useremail-signin:focus,
+#Username:focus,
 #useremail:focus,
 #password:focus,
 #repeat_password:focus{
-	border-bottom: 2px solid #E76F51;
+	border-bottom: 2px solid purple;
 	-webkit-transition: all 0.5s linear;
 	-o-transition: all 0.5s linear;
 	transition: all 0.5s linear;
@@ -111,7 +122,7 @@
 .errDiv,
 .errorSignUpDiv{
 	font-size: 14px;
-	color: rgb(213, 236, 0);
+	color: rgb(228, 70, 42);
 }
 .fa-eye,
 .fa-eye-slash{
